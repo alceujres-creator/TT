@@ -48,6 +48,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <title>Cookie Pop-up</title>
   <style>
     body, html {
       margin: 0;
@@ -55,14 +57,13 @@
       height: 100%;
     }
 
-    /* Fundo ocupando a tela toda */
+    /* Fundo da página */
     .fundo {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('https://github.com/alceujres-creator/TT/blob/main/sleeplean.png?raw=true'); /* Link da imagem de fundo */
       background-size: cover;
       background-position: center;
       z-index: 0;
@@ -75,19 +76,33 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* Escurece a tela, ajuste o 0.5 para mais ou menos escuro */
+      background-color: rgba(0, 0, 0, 0.5); /* Ajuste o escuro aqui */
       z-index: 1;
     }
 
-    /* Imagem da frente (mensagem de cookie) */
+    /* Imagem da frente (cookie) */
     .frente {
       position: fixed;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 2;
-      width: 300px; /* Ajuste o tamanho */
+      width: 300px; /* Ajuste o tamanho da frente aqui */
       height: auto;
+    }
+
+    /* Fundo para PC */
+    @media (min-width: 768px) {
+      .fundo {
+        background-image: url('fundo-pc.jpg'); /* Imagem para PC */
+      }
+    }
+
+    /* Fundo para celular */
+    @media (max-width: 767px) {
+      .fundo {
+        background-image: url('fundo-celular.jpg'); /* Imagem para celular */
+      }
     }
   </style>
 </head>
@@ -96,8 +111,8 @@
   <div class="overlay"></div>
 
   <!-- Imagem da frente com link -->
-  <a href="go.html">
-    <img src="https://github.com/alceujres-creator/TT/blob/main/cookies_en_desktop.png?raw=true" class="frente"> <!-- Link da imagem da frente -->
+  <a href="https://www.exemplo.com">
+    <img src="cookie.png" class="frente"> <!-- Imagem do cookie -->
   </a>
 </body>
 </html>
