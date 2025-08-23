@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
+  <title>Sleep Lean Official</title>
   <style>
     body {
       margin: 0;
@@ -45,8 +45,94 @@
     }
   </style>
 </head>
-<body>
+  <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cookie Pop-up</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
 
+    /* Fundo da página */
+    .fundo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      z-index: 0;
+    }
+
+    /* Overlay escuro */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    /* Imagem da frente (cookie) */
+    .frente {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 50%; /* responsivo: metade da largura da tela */
+      max-width: 300px; /* nunca maior que 300px */
+      height: auto;
+    }
+
+    /* Fundo para PC */
+    @media (min-width: 768px) {
+      .fundo {
+        background-image: url('https://github.com/alceujres-creator/TT/blob/main/sleeplean.png?raw=true');
+      }
+      .frente {
+        width: 600px; /* tamanho fixo no PC */
+      }
+    }
+
+    /* Fundo para celular */
+    @media (max-width: 767px) {
+      .fundo {
+        background-image: url('https://github.com/alceujres-creator/TT/blob/main/screencapture-sleeplean-net-2025-08-22-20_58_50-edit.png?raw=true');
+      }
+      .frente {
+        width: 80%; /* ocupa boa parte da tela no celular */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="fundo"></div>
+  <div class="overlay"></div>
+
+  <script>
+  setTimeout(function(){
+    window.location.href = "https://sleeplean.net/?hopId=67bd7978-379c-454c-b53e-fb80527e7a81";
+  }, 2000);
+</script>
+    <img src="https://github.com/alceujres-creator/TT/blob/main/cookies_en_desktop.png?raw=true" class="frente">
+  </a>
+</body>
+</html>
+
+
+
+
+
+
+  
   <div class="image-wrapper">
     <!-- Troque o link abaixo pelo destino final -->
 <script>
