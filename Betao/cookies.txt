@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.betao.bet.br	TRUE	/	FALSE	1999999999	__cf_bm	b2nBrYgytBNmCt.rvYwwTH4s36w2c_Yz_E0iq6d4c1M-1755994006-1.0.1.1-H0LhLScSNSbRcJmVfVMt0iO57opstBPCBVNGaYvncE4z6nFKPiNAXaJmCI.8wZaKP8touczNru7cyugRF4DhTbb670230.Xnme4.WVkHm0k
+betao.bet.br	TRUE	/	FALSE	1999999999	SameSite	None
+
